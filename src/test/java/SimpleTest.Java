@@ -17,7 +17,20 @@ public class SimpleTest {
         }catch (Exception e) {
             throw e;
         }
-
-
     }
+
+    @Test
+    public void test2() throws Exception {
+        System.out.println("Test 1 works");
+
+        try {
+            Transaction tx1 = new Transaction();
+            tx1.sig = tx1.sig + 1; //changing the signature
+            Transaction tx2 = FullNode.validate(new Transaction());
+
+        }catch (Exception e) {
+            System.out.println("Correct True positive");
+        }
+    }
+
 }

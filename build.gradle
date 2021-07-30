@@ -23,7 +23,9 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
 }
 
-//
-//dependencies {
-//    annotationProcessor 'org.checkerframework.framework.qual.SubtypeOf'
-//}
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

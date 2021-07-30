@@ -9,3 +9,12 @@ sourceSets {
         }
     }
 }
+
+dependencies {
+    implementation files('checker-framework-3.16.0/checker/dist/checker-qual.jar')
+}
+
+//
+//dependencies {
+//    annotationProcessor 'org.checkerframework.framework.qual.SubtypeOf'
+//}

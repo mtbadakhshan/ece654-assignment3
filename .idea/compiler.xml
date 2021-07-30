@@ -3,10 +3,13 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true">
+        <option name="-A" value="myqual.Verified,myqual.PossiblyUnverified" />
+        <processor name="org.checkerframework.common.subtyping.SubtypingChecker" />
         <processorPath useClasspath="false">
           <entry name="$PROJECT_DIR$/checker-framework-3.16.0/checker/dist/checker.jar" />
         </processorPath>
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>

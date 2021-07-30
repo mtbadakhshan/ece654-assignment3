@@ -16,6 +16,7 @@ public class FullNode {
         Transaction unverified_tx = new Transaction();
         forward(verified_tx);
         forward(unverified_tx);
+        System.out.println("done");
     }
 
     public static @Verified Transaction validate(@PossiblyUnverified Transaction tx) throws Exception {

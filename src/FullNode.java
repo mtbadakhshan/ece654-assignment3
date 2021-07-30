@@ -1,5 +1,3 @@
-//import myqual.verified.PossiblyUnverified;
-
 import myqual.verified.PossiblyUnverified;
 import myqual.verified.Verified;
 

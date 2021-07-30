@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class SimpleTest {
 
     @Test
-    public void test1() {
+    public void test1() throws Exception {
         System.out.println("Test 1 works");
 
         try {
@@ -15,7 +15,7 @@ public class SimpleTest {
             assertEquals(tx1.pubkey, tx2.pubkey);
 
         }catch (Exception e) {
-
+            throw e;
         }
 
 

@@ -22,7 +22,7 @@ public class Transaction {
     }
 
     public Transaction() throws NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException, UnsupportedEncodingException, SignatureException {
-
+        // Reference: https://metamug.com/article/security/sign-verify-digital-signature-ecdsa-java.html
         ECGenParameterSpec ecSpec = new ECGenParameterSpec(SPEC);
         KeyPairGenerator g = KeyPairGenerator.getInstance("EC");
         g.initialize(ecSpec, new SecureRandom());

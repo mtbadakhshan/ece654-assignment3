@@ -20,6 +20,7 @@ public class FullNode {
     }
 
     public static @Verified Transaction validate(@PossiblyUnverified Transaction tx) throws Exception {
+        // Reference: https://metamug.com/article/security/sign-verify-digital-signature-ecdsa-java.html
         Signature ecdsaVerify = Signature.getInstance(tx.ALGO);
         KeyFactory kf = KeyFactory.getInstance("EC");
 
